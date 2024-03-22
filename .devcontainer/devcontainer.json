@@ -1,0 +1,10 @@
+{
+    "image": "httpd:latest",
+    "forwardPorts": ["80"],
+    "runArgs": [
+        "--rm"
+    ],
+    "mounts": [
+        "source=C:/k/w/web-projects/Eterna/,target=/usr/local/apache2/htdocs/,type=bind"
+    ]
+}

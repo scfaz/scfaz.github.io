@@ -2091,7 +2091,7 @@ section {
   padding: 0 30px;
   margin: 3px;
   background: #e96b56;
-  color: #e96b56;
+  color: #fff;
   transition: 0.3s;
   border-radius: 50px;
 }
@@ -2151,7 +2151,7 @@ section {
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #ca0606;
+  color: #fff;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;

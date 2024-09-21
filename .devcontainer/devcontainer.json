@@ -5,6 +5,6 @@
         "--rm"
     ],
     "mounts": [
-        "source=C:/k/w/web-projects/Eterna/,target=/usr/local/apache2/htdocs/,type=bind"
+        "source=C:/k/w/git/scfaz.github.io,target=/usr/local/apache2/htdocs/,type=bind"
     ]
 }

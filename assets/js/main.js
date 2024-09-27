@@ -59,6 +59,15 @@
     })
   }
 
+  fetch('/components/topbar.html').then(function(response) {
+    return response.text();
+  }).then(function(html) {
+      console.log(html);
+      document.topbar.innerHTML = html
+  }).catch(function(err) {  
+      console.log('Fetch Error', err);  
+  });
+
   /**
    * Header fixed top on scroll
    */

@@ -63,7 +63,7 @@
     return response.text();
   }).then(function(html) {
       console.log(html);
-      document.getElementById("topbar").appendChild(html);
+      document.getElementById("topbar").innerHTML = html;
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

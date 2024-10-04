@@ -31,7 +31,7 @@
   }
     */
 
-  window.document.title = title + " - " + window.document.title;
+  window.document.title = "Home - " + window.document.title;
 
   fetch(path).then(function(response) {
     return response.text();

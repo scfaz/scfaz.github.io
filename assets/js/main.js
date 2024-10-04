@@ -301,4 +301,9 @@
    */
   new PureCounter();
 
+  new BroadcastChannel('eventChannel').postMessage({
+		name: "template.initialized",
+		message: null
+	});
+
 })()

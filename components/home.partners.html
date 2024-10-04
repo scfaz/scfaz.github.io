@@ -1,0 +1,71 @@
+<div class="container">
+    <div class="section-title">
+        <h2>Partners &amp; Sponsors</h2>
+        <p>The Sickle Cell Foundation of Arizona is proud to join with the community and work together to provide
+            support on many levels.</p>
+    </div>
+
+    <div class="clients-slider swiper">
+        <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a href="https://togetherforrare.com"><img
+                        src="assets/img/partners/Pfizer_Logo_Color_RGB.png" class="img-fluid"
+                        alt="Arizona Department of Health Services"></a></div>
+            <div class="swiper-slide"><a href="https://www.azdhs.gov/"><img
+                        src="assets/img/partners/adhs-logo-h-full-4c.jpg" class="img-fluid"
+                        alt="Arizona Department of Health Services"></a></div>
+            <div class="swiper-slide"><a href="https://theforceforhealth.com/"><img
+                        src="assets/img/partners/force-for-health.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.bannerufc.com/"><img
+                        src="assets/img/partners/banner-university-family-care.png" class="img-fluid" alt=""></a>
+            </div>
+            <div class="swiper-slide"><a href="https://www.phoenixchildrens.org/"><img
+                        src="assets/img/partners/phoenix-childrens-hospital.svg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.candlelightersaz.org/"><img
+                        src="assets/img/partners/candlelighters.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://www.azbloodalliance.org/"><img
+                        src="assets/img/partners/arizona-blood-alliance-logo.jpg" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<script>
+    "use strict";
+
+    /**
+     * Clients Slider
+     */
+    new Swiper('.clients-slider', {
+        speed: 400,
+        loop: true,
+        autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+        },
+        breakpoints: {
+        320: {
+            slidesPerView: 2,
+            spaceBetween: 40
+        },
+        480: {
+            slidesPerView: 3,
+            spaceBetween: 60
+        },
+        640: {
+            slidesPerView: 4,
+            spaceBetween: 80
+        },
+        992: {
+            slidesPerView: 6,
+            spaceBetween: 120
+        }
+        }
+    });
+</script>

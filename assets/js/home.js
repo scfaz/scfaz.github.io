@@ -8,9 +8,10 @@
       
     handleEvent(event) {
       console.log(event.data.name)
-      if (event.data.name === 'template.initialized')
+      if (event.data.name === 'template.initialized') {
         this.setTitle('Home');
         this.setMainContent('/components/home.html')
+      }
     }
 
     setTitle(title) {

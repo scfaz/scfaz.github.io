@@ -62,7 +62,6 @@
   fetch('/components/topbar.html').then(function(response) {
     return response.text();
   }).then(function(html) {
-      console.log(html);
       document.getElementById("topbar").innerHTML = html;
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
@@ -71,7 +70,6 @@
   fetch('/components/header.html').then(function(response) {
     return response.text();
   }).then(function(html) {
-      console.log(html);
       document.getElementById("header").innerHTML = html;
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
@@ -80,7 +78,6 @@
   fetch('/components/hero.html').then(function(response) {
     return response.text();
   }).then(function(html) {
-      console.log(html);
       document.getElementById("hero").innerHTML = html;
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
@@ -89,7 +86,6 @@
   fetch('/components/footer.html').then(function(response) {
     return response.text();
   }).then(function(html) {
-      console.log(html);
       document.getElementById("footer").innerHTML = html;
   }).catch(function(err) {  
       console.log('Fetch Error', err);  

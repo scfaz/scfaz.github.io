@@ -48,7 +48,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/components/home.clients.html').then(function(response) {
+  fetch('/components/home.partners.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("clients").innerHTML = html;

@@ -8,7 +8,9 @@
 (function() {
   "use strict";
 
-  fetch('/components/topbar.html').then(function(response) {
+  window.document.title = "Home - " + window.document.title;
+
+  fetch('/fragments/topbar.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("topbar").innerHTML = html;
@@ -16,7 +18,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/components/header.html').then(function(response) {
+  fetch('/fragments/header.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
@@ -24,7 +26,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/components/hero.html').then(function(response) {
+  fetch('/fragments/hero.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("hero").innerHTML = html;
@@ -32,7 +34,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/components/home.featured.html').then(function(response) {
+  fetch('/fragments/featured.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("featured").innerHTML = html;
@@ -40,7 +42,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/components/home.about.html').then(function(response) {
+  fetch('/fragments/about.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("about").innerHTML = html;
@@ -48,7 +50,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/components/home.partners.html').then(function(response) {
+  fetch('/fragments/partners.html').then(function(response) {
     return response.text();
   }).then(function(html) {
     document.getElementById("clients").innerHTML = html;
@@ -61,7 +63,7 @@
     console.log('Fetch Error', err);  
   });
 
-  fetch('/components/footer.html').then(function(response) {
+  fetch('/fragments/footer.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("footer").innerHTML = html;

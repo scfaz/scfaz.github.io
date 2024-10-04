@@ -33,7 +33,7 @@
 
   window.document.title = "Home - " + window.document.title;
 
-  fetch(path).then(function(response) {
+  fetch('/components/home.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("main").innerHTML = html;

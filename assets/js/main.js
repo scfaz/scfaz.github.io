@@ -296,11 +296,4 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
-
-  console.log("triggering event: template.initialized")
-  new BroadcastChannel('eventChannel').postMessage({
-		name: "template.initialized",
-		message: null
-	});
-
 })()

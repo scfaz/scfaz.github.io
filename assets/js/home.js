@@ -31,6 +31,8 @@
   }
     */
 
+  console.log("initialize page");
+
   window.document.title = "Home - " + window.document.title;
 
   fetch('/components/home.html').then(function(response) {

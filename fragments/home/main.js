@@ -10,7 +10,7 @@
 
   window.document.title = "Home - " + window.document.title;
 
-  fetch('/fragments/home/topbar.html').then(function(response) {
+  fetch('/layout/topbar.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("topbar").innerHTML = html;
@@ -18,7 +18,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/fragments/home/header.html').then(function(response) {
+  fetch('/layout/header.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
@@ -63,7 +63,7 @@
     console.log('Fetch Error', err);  
   });
 
-  fetch('/fragments/home/footer.html').then(function(response) {
+  fetch('/layout/footer.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("footer").innerHTML = html;

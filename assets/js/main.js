@@ -64,5 +64,8 @@
       console.log('Fetch Error', err);  
   });
 
-
+  new BroadcastChannel('eventChannel').postMessage({
+		name: "page.initialized",
+		message: null
+	});
 })()

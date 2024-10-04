@@ -51,9 +51,14 @@
   fetch('/components/home.partners.html').then(function(response) {
     return response.text();
   }).then(function(html) {
-      document.getElementById("clients").innerHTML = html;
+    document.getElementById("clients").innerHTML = html;
+  }).then(function() {
+    new BroadcastChannel('eventChannel').postMessage({
+      name: "partners.initialized",
+      message: null
+    });
   }).catch(function(err) {  
-      console.log('Fetch Error', err);  
+    console.log('Fetch Error', err);  
   });
 
   fetch('/components/footer.html').then(function(response) {
@@ -64,8 +69,4 @@
       console.log('Fetch Error', err);  
   });
 
-  new BroadcastChannel('eventChannel').postMessage({
-		name: "page.initialized",
-		message: null
-	});
 })()

@@ -26,6 +26,14 @@
       console.log('Fetch Error', err);  
   });
 
+  fetch('/fragments/board/main.html').then(function(response) {
+    return response.text();
+  }).then(function(html) {
+      document.getElementById("main").innerHTML = html;
+  }).catch(function(err) {  
+      console.log('Fetch Error', err);  
+  });
+
   fetch('/layout/footer.html').then(function(response) {
     return response.text();
   }).then(function(html) {

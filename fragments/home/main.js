@@ -9,7 +9,8 @@
   "use strict";
 
   window.document.title = "Home - " + window.document.title;
-  document.getElementById("nav-home").classList.add("active");
+  const elem = document.getElementById("nav-home");
+  elem.classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();

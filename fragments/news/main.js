@@ -26,7 +26,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/fragments/template/main.html').then(function(response) {
+  fetch('/fragments/news/main.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("main").innerHTML = html;

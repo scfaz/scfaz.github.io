@@ -22,15 +22,15 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
+      document.getElementById("nav-services").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });
 
-  fetch('/fragments/template/main.html').then(function(response) {
+  fetch('/fragments/providers/main.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("main").innerHTML = html;
-      document.getElementById("nav-template").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

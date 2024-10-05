@@ -8,7 +8,7 @@
 (function() {
   "use strict";
 
-  window.document.title = "Template - " + window.document.title;
+  window.document.title = "Providers - " + window.document.title;
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();

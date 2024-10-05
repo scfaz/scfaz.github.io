@@ -9,6 +9,7 @@
   "use strict";
 
   window.document.title = "Home - " + window.document.title;
+  document.getElementById("home-link").classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();

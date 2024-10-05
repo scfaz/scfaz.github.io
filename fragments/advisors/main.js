@@ -8,7 +8,8 @@
 (function() {
   "use strict";
 
-  window.document.title = "Template - " + window.document.title;
+  window.document.title = "Advisors - " + window.document.title;
+  document.getElementById("about-link").classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();

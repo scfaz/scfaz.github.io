@@ -5,12 +5,10 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function(document, undefined) {
+(function() {
   "use strict";
 
   window.document.title = "Home - " + window.document.title;
-  const elem = document.getElementById("nav-home");
-  elem.classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();
@@ -24,6 +22,7 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
+      document.getElementById("nav-home").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });
@@ -73,4 +72,4 @@
       console.log('Fetch Error', err);  
   });
 
-})(document)
+})()

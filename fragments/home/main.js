@@ -5,11 +5,11 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function(document, undefined) {
   "use strict";
 
   window.document.title = "Home - " + window.document.title;
-  document.getElementById("home-link").classList.add("active");
+  document.getElementById("nav-home").classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();
@@ -72,4 +72,4 @@
       console.log('Fetch Error', err);  
   });
 
-})()
+})(document)

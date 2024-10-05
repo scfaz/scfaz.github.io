@@ -8,7 +8,7 @@
 (function() {
   "use strict";
 
-  window.document.title = "Template - " + window.document.title;
+  window.document.title = "Events - " + window.document.title;
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();
@@ -22,6 +22,7 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
+      document.getElementById("nav-events").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

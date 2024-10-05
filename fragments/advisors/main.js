@@ -9,7 +9,6 @@
   "use strict";
 
   window.document.title = "Advisors - " + window.document.title;
-  document.getElementById("about-link").classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();
@@ -23,6 +22,7 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
+      document.getElementById("nav-about").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

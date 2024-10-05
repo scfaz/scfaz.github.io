@@ -9,7 +9,6 @@
   "use strict";
 
   window.document.title = "Services - " + window.document.title;
-  document.getElementById("services-link").classList.add("active");
 
   fetch('/layout/topbar.html').then(function(response) {
     return response.text();
@@ -31,6 +30,7 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("main").innerHTML = html;
+      document.getElementById("nav-services").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

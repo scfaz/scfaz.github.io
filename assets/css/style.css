@@ -697,6 +697,10 @@ section {
   color: #fff;
 }
 
+.featured .icon-box:hover p a {
+  color: #000; /* Change paragraph links to black or choose blue (#007bff) */
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/

@@ -64,6 +64,14 @@
     console.log('Fetch Error', err);  
   });
 
+  fetch('/fragments/home/news.html').then(function(response) {
+    return response.text();
+  }).then(function(html) {
+      document.getElementById("news").innerHTML = html;
+  }).catch(function(err) {  
+      console.log('Fetch Error', err);  
+  });
+
   fetch('/layout/footer.html').then(function(response) {
     return response.text();
   }).then(function(html) {

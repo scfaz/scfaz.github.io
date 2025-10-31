@@ -27,7 +27,7 @@
       console.log('Fetch Error', err);  
   });
 
-  fetch('/fragments/providers/main.html').then(function(response) {
+  fetch('/fragments/appointments/main.html').then(function(response) {
     return response.text();
   }).then(function(html) {
       document.getElementById("main").innerHTML = html;

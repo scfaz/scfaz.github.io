@@ -30,7 +30,7 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("main").innerHTML = html;
-      document.getElementById("nav-services").classList.add("active");
+      document.getElementById("nav-news").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

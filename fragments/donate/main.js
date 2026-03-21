@@ -22,7 +22,7 @@
     return response.text();
   }).then(function(html) {
       document.getElementById("header").innerHTML = html;
-      document.getElementById("nav-about").classList.add("active");
+      document.getElementById("nav-donate").classList.add("active");
   }).catch(function(err) {  
       console.log('Fetch Error', err);  
   });

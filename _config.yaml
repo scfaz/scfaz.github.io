@@ -1,0 +1,14 @@
+title: Sickle Cell Foundation of Arizona
+description: A starter Jekyll site hosted on GitHub Pages
+
+url: "https://www.scfaz.org/"
+baseurl: ""
+
+markdown: kramdown
+
+permalink: /blog/:year/:month/:day/:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

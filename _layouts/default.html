@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =======================================================
+  * Template Name: Eterna
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/eterna-free-multipurpose-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+  {% include layout/google-analytics.html %}
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} | {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Stylesheets -->
+  {% include layout/stylesheets.html %}
+
+  <!-- Scripts -->
+  {% include layout/scripts.html %}
+</head>
+
+<body>
+
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center">
+  {% include layout/topbar.html %}
+</section>
+<!-- End Top Bar -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    {% include layout/header.html %}
+  </header>
+  <!-- End Header -->
+
+  {% if page.hero %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+        {% include layout/hero.html %}
+  </section>
+  <!-- End Hero Section -->
+  {% endif %}
+  
+  <!-- ======= Main Content ======= -->
+  <main id="main">
+    {{ content }}
+  </main>
+  <!-- End Main Content -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    {% include layout/footer.html %}
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Link to top of page -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</body>
+
+</html>

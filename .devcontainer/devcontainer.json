@@ -1,10 +1,7 @@
 {
-    "image": "httpd:latest",
-    "forwardPorts": ["80"],
+    "image": "jekyll/jekyll:4.4",
+    "forwardPorts": [4000],
     "runArgs": [
         "--rm"
-    ],
-    "mounts": [
-        "source=C:/k/w/git/scfaz.github.io,target=/usr/local/apache2/htdocs/,type=bind"
     ]
 }

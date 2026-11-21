@@ -4,12 +4,6 @@ title: Board
 hero: false
 ---
 
----
-layout: default
-title: Board of Directors
-hero: false
----
-
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
   <div class="container">
